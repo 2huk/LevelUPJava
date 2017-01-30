@@ -90,6 +90,3 @@ public class MyContactList {
         return contacts.length;
     }
 }
-
-
-}
