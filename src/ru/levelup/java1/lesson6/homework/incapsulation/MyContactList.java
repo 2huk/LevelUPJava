@@ -1,4 +1,4 @@
-package ru.levelup.java1.lesson5.homework;
+package ru.levelup.java1.lesson6.homework.incapsulation;
 
 /**
  * Created by anton on 29.01.2017.

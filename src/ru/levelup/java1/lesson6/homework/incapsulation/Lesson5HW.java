@@ -1,6 +1,8 @@
-package ru.levelup.java1.lesson5.homework;
+package ru.levelup.java1.lesson6.homework.incapsulation;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
  * Created by anton on 30.01.2017.
@@ -32,7 +34,7 @@ public class Lesson5HW {
                     if (contactList.get(i) == null) {
                         break;
                     }
-                    System.out.println("ID: " + i + "\t|Name:" + ((contactList.get(i)).name) + "\t|Phone:" + (contactList.get(i)).phone + "\t|Age:" + (contactList.get(i)).age + "|");
+                    System.out.println("ID: " + i + "\t|Name:" + ((contactList.get(i)).getName()) + "\t|Phone:" + (contactList.get(i)).getPhone() + "\t|Age:" + (contactList.get(i)).getAge() + "|");
 
                 }
             }
@@ -45,7 +47,7 @@ public class Lesson5HW {
 
                 try {
                     System.out.print("Введите Name");
-                    contact.name = reader.readLine();
+                    contact.setName(reader.readLine());
                 } catch (NumberFormatException e) {
                     System.out.println("Некорректный ввод");
 
@@ -55,7 +57,7 @@ public class Lesson5HW {
 
                 try {
                     System.out.print("Введите Phone");
-                    contact.phone = reader.readLine();
+                    contact.setPhone(reader.readLine());
                 } catch (NumberFormatException e) {
                     System.out.println("Некорректный ввод");
 
@@ -65,7 +67,7 @@ public class Lesson5HW {
 
                 try {
                     System.out.print("Введите Age");
-                    contact.age = Integer.parseInt(reader.readLine());
+                    contact.setAge(Integer.parseInt(reader.readLine()));
                 } catch (NumberFormatException e) {
                     System.out.println("Некорректный ввод");
 
