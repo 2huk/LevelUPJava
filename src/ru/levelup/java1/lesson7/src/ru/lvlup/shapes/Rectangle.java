@@ -4,33 +4,33 @@ package ru.levelup.java1.lesson7.src.ru.lvlup.shapes;
  * Created by anton on 03.02.2017.
  */
 public class Rectangle extends Square {
-    private double b;
+    private double height;
     public Rectangle(){
         this(1,1,0);
     }
 
     public Rectangle(double width, double height, int color){
-        this.a = width;
-        this.b = height;
+        this.width = width;
+        this.height = height;
         setColor(color);
         calcValues();
     }
 
 
     public double getHeight() {
-        return b;
+        return height;
     }
 
 
 
     public void setHeight(double height) {
-        this.b = height;
+        this.height = height;
         calcValues();
     }
 
 
     private void calcValues() {
-        square = a * b;
-        perimiter = 2 * (a + b);
+        square = height * width;
+        perimiter = 2 * (height + width);
     }
 }

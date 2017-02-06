@@ -4,7 +4,7 @@ package ru.levelup.java1.lesson7.src.ru.lvlup.shapes;
  * Created by anton on 06.02.2017.
  */
 public class Square extends Shape {
-    protected double a;
+    protected double width;
 
     public Square() {
         this(1, 1);
@@ -12,25 +12,25 @@ public class Square extends Shape {
 
 
     public Square(double width, int color) {
-        this.a = width;
+        this.width = width;
         setColor(color);
         calcValues();
     }
 
-    public double getA() {
-        return a;
+    public double getWidth() {
+        return width;
     }
 
 
-    public void setA(double width) {
-        this.a = width;
+    public void setWidth(double width) {
+        this.width = width;
         calcValues();
     }
 
 
     private void calcValues() {
-        square = a * a;
-        perimiter = 4 * a;
+        square = width * width;
+        perimiter = 4 * width;
     }
 
 }

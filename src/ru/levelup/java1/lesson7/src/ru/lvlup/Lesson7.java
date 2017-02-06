@@ -9,10 +9,11 @@ import ru.levelup.java1.lesson7.src.ru.lvlup.shapes.Square;
  */
 public class Lesson7 {
     public static void main(String[] args) {
+        Square sq = new Square(0,1);
+        sq.getWidth();
         Rectangle rect = new Rectangle(10,20,0);
         rect.setHeight(1000);
-        Square sq = new Square();
         Oval oval = new Oval(10,5,0);
-        oval.setB(22);
+        oval.setSecondaryRadius(22);
     }
 }
