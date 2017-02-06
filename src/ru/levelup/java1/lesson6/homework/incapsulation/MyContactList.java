@@ -63,7 +63,7 @@ public class MyContactList {
     }
 
     public boolean isEmpty() {
-        if (contacts.length == 0) {
+        if (contacts == null) {
             return true;
         } else {
             return false;

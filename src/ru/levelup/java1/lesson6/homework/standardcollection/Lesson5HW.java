@@ -14,7 +14,7 @@ public class Lesson5HW {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int counter = 0;
         int userInput = 0;//1show 2 add 3 exit
-        ArrayList contactList = new ArrayList();
+        ArrayList<Contact> contactList = new ArrayList<Contact>();
 
 
         while (true) {
@@ -37,7 +37,7 @@ public class Lesson5HW {
                     if (contactList.get(i) == null) {
                         break;
                     }
-                    Contact tempContact = (Contact) contactList.get(i);
+                    Contact tempContact = contactList.get(i);
                     System.out.println("ID: " + i + "\t|Name:" + tempContact.getName() + "\t|Phone:" + tempContact.getPhone() + "\t|Age:" + tempContact.getAge() + "|");
 
                 }
@@ -132,7 +132,7 @@ public class Lesson5HW {
                     e.printStackTrace();
                 }
                 for (int i = 0; i < (contactList.size()); i++) {
-                    Contact tempContact = (Contact) contactList.get(i);
+                    Contact tempContact = contactList.get(i);
                     if (tempContact.getName().equals(nameToChange)) {
                         contactList.set(i, contact);
 
@@ -151,7 +151,7 @@ public class Lesson5HW {
                     e.printStackTrace();
                 }
                 for (int i = 0; i < (contactList.size()); i++) {
-                    Contact tempContact = (Contact) contactList.get(i);
+                    Contact tempContact = contactList.get(i);
                     if (tempContact.getName().equals(nameToRemove)) {
                         contactList.remove(i);
                         i--;
@@ -171,7 +171,7 @@ public class Lesson5HW {
                     e.printStackTrace();
                 }
                 for (int i = 0; i < (contactList.size()); i++) {
-                    Contact tempContact = (Contact) contactList.get(i);
+                    Contact tempContact = contactList.get(i);
                     if (tempContact.getName().equals(nameToFind)) {
                         System.out.println("ID: " + i + "\t|Name:" + tempContact.getName() + "\t|Phone:" + tempContact.getPhone() + "\t|Age:" + tempContact.getAge() + "|");
                     }
@@ -179,8 +179,10 @@ public class Lesson5HW {
 
             }
             if (userInput == 6) {
+
                 return;
             }
+
         }
     }
 }

@@ -4,8 +4,8 @@ package ru.levelup.java1.lesson6.homework.incapsulation;
  * Created by anton on 27.01.2017.
  */
 public class Contact {
-    private  String name = new String();
-    private  String phone = new String();
+    private  String name;// = new String();
+    private  String phone;// = new String();
     private  int age;
 
 
