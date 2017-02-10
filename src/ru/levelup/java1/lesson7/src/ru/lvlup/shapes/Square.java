@@ -27,10 +27,15 @@ public class Square extends Shape {
         calcValues();
     }
 
-
-    private void calcValues() {
+    @Override
+    public void calcValues() {
         square = width * width;
         perimiter = 4 * width;
+    }
+
+
+    public void draw(){
+
     }
 
 }

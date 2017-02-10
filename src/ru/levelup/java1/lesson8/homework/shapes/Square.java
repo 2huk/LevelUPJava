@@ -15,10 +15,18 @@ public class Square extends MultiAngle {
         this.width = width;
         setColor(color);
         calcValues();
-        anglesCount = 4;
-        isConvex = true;
-
+        setAnglesCount(4);
+        setConvex(true);
     }
+
+    protected void setAnglesCount(int anglesCount){
+        this.anglesCount = anglesCount;
+    }
+
+    protected void setConvex(boolean isConvex){
+        this.isConvex = isConvex;
+    }
+
 
     public double getWidth() {
         return width;
@@ -30,7 +38,7 @@ public class Square extends MultiAngle {
         calcValues();
     }
 
-    public void calcValues() {
+    protected void calcValues() {
         s = width * width;
         p = 4 * width;
     }

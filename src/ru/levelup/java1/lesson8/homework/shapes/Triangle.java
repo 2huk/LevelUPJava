@@ -14,10 +14,18 @@ public class Triangle extends MultiAngle {
         this.c = c;
         setColor(color);
         calcValues();
-        anglesCount = 3;
-        isConvex = false;
-
+        setAnglesCount(3);
+        setConvex(false);
     }
+
+    protected void setAnglesCount(int anglesCount) {
+        this.anglesCount = anglesCount;
+    }
+
+    protected void setConvex(boolean isConvex) {
+        this.isConvex = isConvex;
+    }
+
 
     public double getA() {
         return a;
@@ -47,7 +55,7 @@ public class Triangle extends MultiAngle {
 
     }
 
-    private void calcValues() {
+    protected void calcValues() {
         p = a + b + c;
         double per = p / 2;
         s = Math.sqrt(per * (per - a) * (per - b) * (per - c));

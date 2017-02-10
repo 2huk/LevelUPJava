@@ -5,11 +5,12 @@ package ru.levelup.java1.lesson7.src.ru.lvlup.shapes;
  */
 public class Rectangle extends Square {
     private double height;
-    public Rectangle(){
-        this(1,1,0);
+
+    public Rectangle() {
+        this(1, 1, 0);
     }
 
-    public Rectangle(double width, double height, int color){
+    public Rectangle(double width, double height, int color) {
         this.width = width;
         this.height = height;
         setColor(color);
@@ -22,14 +23,13 @@ public class Rectangle extends Square {
     }
 
 
-
     public void setHeight(double height) {
         this.height = height;
         calcValues();
     }
 
 
-    private void calcValues() {
+    public void calcValues() {
         square = height * width;
         perimiter = 2 * (height + width);
     }

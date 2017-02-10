@@ -36,7 +36,7 @@ public class Oval extends NoAngle {
         calcValues();
     }
 
-    private void calcValues() {
+    protected void calcValues() {
         s = Math.PI * firstRadius * secondaryRadius;
         p = Math.PI * (firstRadius + secondaryRadius);
     }

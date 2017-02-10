@@ -38,8 +38,6 @@ public abstract class Shape {
         this.name = name;
     }
 
-    private void calcValues(){//чтобы в потомках тоже был доступ private
-
-    }
+    abstract void calcValues();
 
 }

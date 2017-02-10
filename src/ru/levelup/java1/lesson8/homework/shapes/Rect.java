@@ -16,8 +16,15 @@ public class Rect extends MultiAngle {
         this.height = height;
         setColor(color);
         calcValues();
-        anglesCount = 4;
-        isConvex = true;
+        setAnglesCount(4);
+        setConvex(true);
+    }
+    protected void setAnglesCount(int anglesCount){
+        this.anglesCount = anglesCount;
+    }
+
+    protected void setConvex(boolean isConvex){
+        this.isConvex = isConvex;
     }
 
     public double getWidth() {
@@ -39,7 +46,7 @@ public class Rect extends MultiAngle {
     }
 
 
-    public void calcValues() {
+    protected void calcValues() {
         s = height * width;
         p = 2 * (height + width);
     }
