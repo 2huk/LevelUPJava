@@ -5,11 +5,11 @@ package ru.levelup.java1.lesson8.homework.shapes;
  */
 public abstract class Shape {
     private int color;
-    protected double s;
-    protected double p;
+    private double s;
+    private double p;
     private String name;
 
-    Shape(){
+    protected Shape() {
         setName(this.getClass().getSimpleName() + hashCode());
     }
 
@@ -23,6 +23,14 @@ public abstract class Shape {
 
     public double getP() {
         return p;
+    }
+
+    protected void setS(double s) {
+        this.s = s;
+    }
+
+    protected void setP(double p) {
+        this.p = p;
     }
 
     public void setColor(int color) {

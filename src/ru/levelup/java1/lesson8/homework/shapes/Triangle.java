@@ -49,9 +49,9 @@ public class Triangle extends MultiAngle {
 
     @Override
     protected void calcValues() {
-        p = a + b + c;
-        double per = p / 2;
-        s = Math.sqrt(per * (per - a) * (per - b) * (per - c));
+        setP(a + b + c);
+        double per = getP() / 2;
+        setS(Math.sqrt(per * (per - a) * (per - b) * (per - c)));
 
     }
 

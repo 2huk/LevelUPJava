@@ -9,7 +9,7 @@ public class Homework {
     public static void main(String[] args) {
         Square sq = new Square();
         System.out.print(sq.getName());
-        System.out.println(sq.getWidth());
+        System.out.println();
 
     }
 

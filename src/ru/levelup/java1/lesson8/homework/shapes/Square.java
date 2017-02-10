@@ -32,8 +32,8 @@ public class Square extends MultiAngle {
 
     @Override
     protected void calcValues() {
-        s = width * width;
-        p = 4 * width;
+        setS(width * width);
+        setP(4 * width);
     }
 
 }

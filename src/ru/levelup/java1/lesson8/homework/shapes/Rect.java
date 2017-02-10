@@ -40,8 +40,8 @@ public class Rect extends MultiAngle {
 
     @Override
     protected void calcValues() {
-        s = height * width;
-        p = 2 * (height + width);
+        setS(height * width);
+        setP(2 * (height + width));
     }
 
 }
