@@ -4,7 +4,7 @@ package ru.levelup.java1.lesson8.homework.shapes;
  * Created by anton on 09.02.2017.
  */
 public class Circle extends NoAngle {
-    protected double radius;
+    private double radius;
 
     public Circle() {
         this(1, 1);
