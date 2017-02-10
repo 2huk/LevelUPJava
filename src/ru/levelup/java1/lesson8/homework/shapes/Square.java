@@ -19,11 +19,13 @@ public class Square extends MultiAngle {
         setConvex(true);
     }
 
-    protected void setAnglesCount(int anglesCount){
+    @Override
+    protected void setAnglesCount(int anglesCount) {
         this.anglesCount = anglesCount;
     }
 
-    protected void setConvex(boolean isConvex){
+    @Override
+    protected void setConvex(boolean isConvex) {
         this.isConvex = isConvex;
     }
 
@@ -38,6 +40,7 @@ public class Square extends MultiAngle {
         calcValues();
     }
 
+    @Override
     protected void calcValues() {
         s = width * width;
         p = 4 * width;

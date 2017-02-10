@@ -27,6 +27,7 @@ public class Circle extends NoAngle {
         calcValues();
     }
 
+    @Override
     protected void calcValues() {
         s = Math.PI * radius * radius;
         p = Math.PI * 2 * radius;

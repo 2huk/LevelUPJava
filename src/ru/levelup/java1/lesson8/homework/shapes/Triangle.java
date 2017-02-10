@@ -18,10 +18,12 @@ public class Triangle extends MultiAngle {
         setConvex(false);
     }
 
+    @Override
     protected void setAnglesCount(int anglesCount) {
         this.anglesCount = anglesCount;
     }
 
+    @Override
     protected void setConvex(boolean isConvex) {
         this.isConvex = isConvex;
     }
@@ -55,6 +57,7 @@ public class Triangle extends MultiAngle {
 
     }
 
+    @Override
     protected void calcValues() {
         p = a + b + c;
         double per = p / 2;

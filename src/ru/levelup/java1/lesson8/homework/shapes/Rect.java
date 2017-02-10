@@ -19,11 +19,14 @@ public class Rect extends MultiAngle {
         setAnglesCount(4);
         setConvex(true);
     }
-    protected void setAnglesCount(int anglesCount){
+
+    @Override
+    protected void setAnglesCount(int anglesCount) {
         this.anglesCount = anglesCount;
     }
 
-    protected void setConvex(boolean isConvex){
+    @Override
+    protected void setConvex(boolean isConvex) {
         this.isConvex = isConvex;
     }
 
@@ -45,7 +48,7 @@ public class Rect extends MultiAngle {
         calcValues();
     }
 
-
+    @Override
     protected void calcValues() {
         s = height * width;
         p = 2 * (height + width);
