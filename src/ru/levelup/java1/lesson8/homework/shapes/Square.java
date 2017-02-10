@@ -12,22 +12,12 @@ public class Square extends MultiAngle {
 
 
     public Square(double width, int color) {
+        super(4,true);
         this.width = width;
         setColor(color);
         calcValues();
-        setAnglesCount(4);
-        setConvex(true);
     }
 
-    @Override
-    protected void setAnglesCount(int anglesCount) {
-        this.anglesCount = anglesCount;
-    }
-
-    @Override
-    protected void setConvex(boolean isConvex) {
-        this.isConvex = isConvex;
-    }
 
 
     public double getWidth() {

@@ -9,24 +9,14 @@ public class Triangle extends MultiAngle {
     private double c;
 
     public Triangle(double a, double b, double c, int color) {
+        super(3,false);
         this.a = a;
         this.b = b;
         this.c = c;
         setColor(color);
         calcValues();
-        setAnglesCount(3);
-        setConvex(false);
     }
 
-    @Override
-    protected void setAnglesCount(int anglesCount) {
-        this.anglesCount = anglesCount;
-    }
-
-    @Override
-    protected void setConvex(boolean isConvex) {
-        this.isConvex = isConvex;
-    }
 
 
     public double getA() {
