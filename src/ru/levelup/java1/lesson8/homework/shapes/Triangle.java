@@ -1,7 +1,7 @@
 package ru.levelup.java1.lesson8.homework.shapes;
 
 /**
- * Created by anton on 09.02.2017.
+ * Created by anton on 09.02.2017.ss
  */
 public class Triangle extends MultiAngle {
     private double a;
