@@ -4,16 +4,16 @@ package ru.levelup.java1.lesson8.uiclasses;
  * Created by anton on 17.02.2017.
  */
 public abstract class BaseElement implements Drawable, Moveable, Resizeable {
-    protected double posX;
-    protected double posY;
-    protected double height;
-    protected double width;
-    protected double padding;
-    protected double margin;
-    protected int bgColor;
-    protected String name;
-    protected String title;
-    protected boolean hover;
+    private double posX;
+    private double posY;
+    private double height;
+    private double width;
+    private double padding;
+    private double margin;
+    private int bgColor;
+    private String name;
+    private String title;
+    private boolean hover;
 
     BaseElement() {
         this.posX = 0;
