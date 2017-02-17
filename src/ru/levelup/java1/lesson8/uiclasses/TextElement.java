@@ -9,5 +9,14 @@ public abstract class TextElement extends BaseElement {
     protected String fontStyle;
     protected String fontName;
     protected String text;
+    TextElement(){
+        this.fontSize = 0;
+        this.fontColor = 0;
+        this.fontStyle = "default";
+        this.fontName = "TimesNewRoman";
+        this.text = "OK";
+
+
+    }
 
 }
